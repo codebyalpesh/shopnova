@@ -1,20 +1,26 @@
 ## 🚀 ShopNova – Modern eCommerce Frontend
 
-ShopNova is a fully responsive, modern eCommerce frontend project built using Bootstrap 5 and a scalable design system architecture. This project focuses on clean UI, reusable components, and real-world frontend development practices.
+ShopNova is a fully responsive, modern eCommerce frontend project built using **Bootstrap 5** and a scalable **design system architecture**. It focuses on clean UI, reusable components, and real-world frontend development practices.
 
-The goal of ShopNova is to demonstrate how to build production-ready UI with proper structure, maintainable CSS, and a strong design system approach.
+The goal of ShopNova is to demonstrate how to build **production-ready user interfaces** with proper structure, maintainable CSS, and a strong design system approach.
 
 ---
 
-## ✨ Features
+## 🌐 Live Demo
 
-* 📱 Fully Responsive (Mobile-First Design)
-* 🎨 Modern UI with Clean Layout
-* 🧩 Reusable Components (Cards, Forms, Navbar, Footer)
-* 🔐 Authentication Pages (Login & Register)
-* 🛍️ Product Listing & Featured Sections
-* ⚡ Optimized Performance & Clean Code
-* 🧱 Scalable CSS Architecture (Design System Based)
+🔗 https://codebyalpesh.github.io/shopnova/
+
+---
+
+## ✨ Key Highlights
+
+* 📱 Mobile-first, fully responsive design
+* 🎨 Clean and modern UI/UX
+* 🧩 Reusable and scalable components
+* 🔐 Login & Register authentication pages
+* 🛍️ Product listing and featured sections
+* 🧱 Design system-based CSS architecture
+* ⚡ Optimized and maintainable code structure
 
 ---
 
@@ -23,39 +29,16 @@ The goal of ShopNova is to demonstrate how to build production-ready UI with pro
 * HTML5
 * CSS3 (Design System Architecture)
 * Bootstrap 5
-* Font Awesome Icons
+* Font Awesome
 
 ---
 
-## 📂 Project Structure
+## 🎯 Project Purpose
 
-* Structured folder setup for scalability
-* Organized CSS files (variables, utilities, base, responsive, etc.)
-* Component-based UI sections
+This project is built as a **portfolio-ready frontend project** to showcase real-world UI development skills, clean code practices, and scalable architecture.
 
 ---
 
-## 🎯 Purpose
+## 👨‍💻 Author
 
-This project is created as a portfolio-ready frontend project for freelancers and developers to showcase real-world UI development skills and best practices.
-
----
-
-## 📸 Use Cases
-
-* Portfolio Project
-* Client Demo
-* UI Practice
-* Bootstrap + Design System Learning
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this project, improve it, and use it in your own work.
-
----
-
-## 📌 Author
-
-Developed by Alpesh – Frontend Developer
+**Alpesh** – Frontend Developer

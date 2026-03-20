@@ -1,0 +1,45 @@
+/* =====================================================
+   SHOPNOVA – FOOTSTRAP
+===================================================== */
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.section {
+  padding: var(--space-16) 0;
+}
+
+/* Row & Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--space-4));
+  margin-right: calc(-1 * var(--space-4));
+}
+
+.row > * {
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  flex: 1 1 auto;
+}
+
+/* Flex Helpers */
+.d-flex { display: flex !important; }
+.flex-column { flex-direction: column !important; }
+.justify-start { justify-content: flex-start !important; }
+.justify-center { justify-content: center !important; }
+.justify-end { justify-content: flex-end !important; }
+.align-start { align-items: flex-start !important; }
+.align-center { align-items: center !important; }
+.align-end { align-items: flex-end !important; }
+
+/* Visibility Helpers */
+.visible-sm, .visible-md, .visible-lg { display: none; }
+@media (min-width: 576px) { .visible-sm { display: block; } }
+@media (min-width: 768px) { .visible-md { display: block; } }
+@media (min-width: 992px) { .visible-lg { display: block; } }

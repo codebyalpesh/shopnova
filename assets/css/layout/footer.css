@@ -1,0 +1,115 @@
+/* =====================================================
+   SHOPNOVA – FOOTER SECTION
+===================================================== */
+
+/* Footer Wrapper */
+.shopnova-footer {
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-50);
+    padding: var(--space-16) 0;
+    font-family: var(--font-primary);
+}
+
+/* Footer Top Section */
+.shopnova-footer .footer-top {
+    margin-bottom: var(--space-12);
+}
+
+/* Footer Titles */
+.shopnova-footer h5 {
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-lg);
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+/* Footer Paragraphs */
+.shopnova-footer p {
+    font-size: var(--fs-base);
+    color: var(--color-gray-300);
+    margin-bottom: var(--space-3);
+}
+
+/* Footer Links */
+.shopnova-footer a {
+    color: var(--color-gray-300);
+    transition: color var(--transition-fast);
+}
+
+.shopnova-footer a:hover,
+.shopnova-footer a:focus {
+    color: var(--color-primary);
+    outline: none;
+}
+
+/* Newsletter Form */
+.shopnova-footer .footer-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.shopnova-footer .footer-newsletter input[type="email"] {
+    flex: 1 1 auto;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-gray-400);
+    background-color: var(--color-white);
+    font-size: var(--fs-sm);
+}
+
+.shopnova-footer .footer-newsletter button {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: var(--fw-medium);
+    border: none;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    cursor: pointer;
+}
+
+.shopnova-footer .footer-newsletter button:hover,
+.shopnova-footer .footer-newsletter button:focus {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Social Icons */
+.shopnova-footer .footer-social a {
+    display: inline-block;
+    color: var(--color-gray-300);
+    font-size: var(--fs-lg);
+    margin-right: var(--space-3);
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.shopnova-footer .footer-social a:hover,
+.shopnova-footer .footer-social a:focus {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Footer Bottom */
+.shopnova-footer .footer-bottom {
+    text-align: center;
+    font-size: var(--fs-sm);
+    color: var(--color-gray-400);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-gray-700);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .shopnova-footer .footer-newsletter {
+        flex-direction: column;
+    }
+    .shopnova-footer .footer-social a {
+        margin-right: var(--space-2);
+        margin-top: var(--space-2);
+    }
+}

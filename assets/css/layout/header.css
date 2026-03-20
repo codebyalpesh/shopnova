@@ -1,0 +1,144 @@
+/* =====================================================
+   SHOPNOVA – NAVBAR COMPONENT
+===================================================== */
+
+/* Main Navbar Wrapper */
+.navbar-shopnova {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-3) var(--space-4);
+    transition: var(--transition-normal);
+    z-index: var(--z-sticky);
+}
+
+/* Brand / Logo */
+.navbar-shopnova .brand-logo {
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xl);
+    color: var(--color-gray-900);
+    transition: color var(--transition-fast);
+}
+
+.navbar-shopnova .brand-logo:hover,
+.navbar-shopnova .brand-logo:focus {
+    color: var(--color-primary);
+    outline: none;
+}
+
+/* Navbar Links */
+.navbar-shopnova .nav-link {
+    font-family: var(--font-primary);
+    font-weight: var(--fw-medium);
+    color: var(--color-gray-700);
+    font-size: var(--fs-base);
+    padding: var(--space-2) var(--space-3);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.navbar-shopnova .nav-link:hover,
+.navbar-shopnova .nav-link:focus {
+    color: var(--color-primary);
+    outline: none;
+}
+
+/* Search Form */
+.navbar-shopnova .search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.navbar-shopnova .search-form input.form-control {
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-sm);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.navbar-shopnova .search-form input.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+    outline: none;
+}
+
+.navbar-shopnova .search-form button {
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.navbar-shopnova .search-form button:hover,
+.navbar-shopnova .search-form button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    outline: none;
+}
+
+/* Cart Badge */
+.navbar-shopnova .cart-badge {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    color: var(--color-white);
+    background-color: var(--color-danger);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-pill);
+    transition: transform var(--transition-fast);
+}
+
+.navbar-shopnova .cart-badge:hover,
+.navbar-shopnova .cart-badge:focus {
+    transform: scale(1.1);
+    outline: none;
+}
+
+/* Buttons */
+.navbar-shopnova .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    padding: var(--space-2) var(--space-4);
+    transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.navbar-shopnova .btn-primary:hover,
+.navbar-shopnova .btn-primary:focus {
+    background-color: var(--color-primary-dark);
+    box-shadow: var(--shadow-sm);
+    outline: none;
+}
+
+.navbar-shopnova .btn-outline-primary {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    padding: var(--space-2) var(--space-4);
+    transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.navbar-shopnova .btn-outline-primary:hover,
+.navbar-shopnova .btn-outline-primary:focus {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar-shopnova .search-form {
+        max-width: 100%;
+        margin-bottom: var(--space-2);
+    }
+    .navbar-shopnova .nav-item {
+        margin-bottom: var(--space-2);
+    }
+}

@@ -1,0 +1,105 @@
+/* =====================================================
+   SHOPNOVA – HERO SECTION
+   Modular, responsive, and conversion-focused
+===================================================== */
+
+/* Hero Section Wrapper */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-gray-50);
+    padding: var(--space-16) 0;
+    position: relative;
+}
+
+/* Hero Heading */
+.hero-section .hero-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+    line-height: 1.2;
+}
+
+.hero-section .hero-subtitle {
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-5);
+    line-height: 1.5;
+}
+
+/* Hero Buttons */
+.hero-section .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-base);
+    padding: var(--space-3) var(--space-6);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:focus {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.hero-section .btn-outline-dark {
+    border: 1px solid var(--color-gray-700);
+    color: var(--color-gray-700);
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-base);
+    padding: var(--space-3) var(--space-6);
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-section .btn-outline-dark:hover,
+.hero-section .btn-outline-dark:focus {
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Hero Trust Signals */
+.hero-section .hero-trust {
+    font-size: var(--fs-sm);
+    color: var(--color-gray-500);
+    margin-top: var(--space-5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+}
+
+.hero-section .hero-trust i {
+    color: var(--color-primary);
+    margin-right: var(--space-1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section .hero-title {
+        font-size: var(--fs-3xl);
+    }
+    .hero-section .hero-subtitle {
+        font-size: var(--fs-md);
+    }
+    .hero-section .btn-primary,
+    .hero-section .btn-outline-dark {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--fs-sm);
+    }
+    .hero-section .hero-trust {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+}

@@ -1,0 +1,56 @@
+/* =====================================================
+   SHOPNOVA – TRUSTED BRANDS SECTION
+===================================================== */
+
+/* Wrapper */
+.trusted-brands-section {
+    padding: var(--space-16) 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+/* Section Title */
+.trusted-brands-section .trusted-brands-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-6);
+}
+
+/* Brands Container */
+.trusted-brands-section .trusted-brands-list {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+}
+
+/* Individual Brand Item */
+.trusted-brands-section .trusted-brands-item {
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-medium);
+    color: var(--color-gray-700);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-gray-100);
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+    cursor: default;
+}
+
+.trusted-brands-section .trusted-brands-item:hover,
+.trusted-brands-section .trusted-brands-item:focus {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .trusted-brands-section .trusted-brands-item {
+        font-size: var(--fs-sm);
+        padding: var(--space-1) var(--space-3);
+    }
+}

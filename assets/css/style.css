@@ -1,0 +1,46 @@
+/* Base */
+
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/footstrap.css');
+@import url('./base/base.css');
+@import url('./base/typography.css');
+@import url('./base/utilities.css');
+@import url('./base/responsive.css');
+
+/* Components  */
+
+@import url('./components/buttons.css');
+@import url('./components/forms.css');
+@import url('./components/cards.css');
+@import url('./components/badges.css');
+@import url('./components/modals.css');
+@import url('./components/products.css');
+@import url('./components/product-details.css');
+@import url('./components/cart.css');
+@import url('./components/checkout.css');
+@import url('./components/login.css');
+@import url('./components/register.css');
+
+/* Layout  */
+
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/* Section  */
+
+@import url('./sections/hero.css');
+@import url('./sections/featured-products.css');
+@import url('./sections/promo.css');
+@import url('./sections/categories.css');
+@import url('./sections/trending.css');
+@import url('./sections/why-us.css');
+@import url('./sections/trending-brands.css');
+
+/* Pages */
+@import url('./pages/about.css');
+@import url('./pages/contact.css');
+
+
+
+

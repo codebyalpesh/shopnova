@@ -1,0 +1,148 @@
+/* =====================================================
+   SHOPNOVA – SHOP PAGE
+===================================================== */
+
+/* Main Shop Container */
+.shop-page {
+    padding: var(--space-16) 0;
+    font-family: var(--font-primary);
+    color: var(--color-gray-800);
+}
+
+/* Page Title */
+.shop-page h1 {
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-3xl);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-8);
+    text-align: center;
+}
+
+/* Controls Wrapper */
+.shop-page .shop-controls {
+    margin-bottom: var(--space-8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+}
+
+/* Search Input */
+.shop-page #searchInput {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-base);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-gray-300);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.shop-page #searchInput:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    outline: none;
+}
+
+/* Category & Sort Select */
+.shop-page #categoryFilter,
+.shop-page #sortSelect {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-base);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-gray-300);
+    background-color: var(--color-white);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.shop-page #categoryFilter:focus,
+.shop-page #sortSelect:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    outline: none;
+}
+
+/* Product Grid */
+.shop-page .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+}
+
+.shop-page .product-grid .card-img-top {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+/* Individual Product Card (if dynamically added) */
+.shop-page .product-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    cursor: pointer;
+}
+
+.shop-page .product-card:hover,
+.shop-page .product-card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.shop-page .product-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.shop-page .product-card-body {
+    padding: var(--space-4);
+    text-align: center;
+}
+
+.shop-page .product-card-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-900);
+}
+
+.shop-page .product-card-price {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-3);
+    color: var(--color-primary);
+}
+
+.shop-page .product-card button {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--fs-sm);
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    cursor: pointer;
+}
+
+.shop-page .product-card button:hover,
+.shop-page .product-card button:focus {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .shop-page .shop-controls {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,64 @@
+/* =====================================================
+   SHOPNOVA – PROMO / MEGA SALE SECTION
+===================================================== */
+
+/* Promo Section Wrapper */
+.promo-section {
+    background-color: var(--color-primary-light);
+    padding: var(--space-16) 0;
+    text-align: center;
+    border-radius: var(--radius-lg);
+    margin: var(--space-8) 0;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Promo Heading */
+.promo-section .promo-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-3);
+}
+
+/* Promo Subtitle */
+.promo-section .promo-subtitle {
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-4);
+}
+
+/* Promo Button */
+.promo-section .promo-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-base);
+    padding: var(--space-3) var(--space-6);
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.promo-section .promo-btn:hover,
+.promo-section .promo-btn:focus {
+    background-color: var(--color-secondary-light);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .promo-section .promo-title {
+        font-size: var(--fs-xl);
+    }
+    .promo-section .promo-subtitle {
+        font-size: var(--fs-sm);
+    }
+    .promo-section .promo-btn {
+        font-size: var(--fs-sm);
+        padding: var(--space-2) var(--space-4);
+    }
+}

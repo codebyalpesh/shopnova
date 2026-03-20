@@ -1,0 +1,45 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-4);
+}
+
+.label {
+  margin-bottom: var(--space-2);
+  font-weight: var(--fw-medium);
+}
+
+.input {
+  padding: var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+.input-error {
+  border-color: var(--color-danger);
+}
+
+.input-success {
+  border-color: var(--color-success);
+}
+
+.form-message {
+  font-size: var(--fs-sm);
+  margin-top: var(--space-1);
+}
+
+.form-error { color: var(--color-danger); }
+.form-success { color: var(--color-success); }
+
+/* Checkbox & Radio */
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+}

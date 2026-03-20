@@ -1,0 +1,46 @@
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Product Card */
+.product-card img {
+  width: 100%;
+}
+
+.product-info {
+  padding: var(--space-4);
+}
+
+.product-title {
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-2);
+}
+
+.product-price {
+  font-weight: var(--fw-semibold);
+}
+
+.product-rating {
+  font-size: var(--fs-sm);
+  color: var(--color-warning);
+}
+
+/* Category Card */
+.category-card {
+  text-align: center;
+  padding: var(--space-6);
+}
+
+/* Offer Card */
+.offer-card {
+  background: var(--color-primary-light);
+  padding: var(--space-6);
+}

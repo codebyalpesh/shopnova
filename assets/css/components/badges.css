@@ -1,0 +1,21 @@
+.badge {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+}
+
+.badge-sale {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+.badge-new {
+  background: var(--color-success);
+  color: var(--color-white);
+}
+
+.badge-discount {
+  background: var(--color-warning);
+  color: var(--color-black);
+}

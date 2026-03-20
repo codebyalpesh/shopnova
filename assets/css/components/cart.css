@@ -1,0 +1,130 @@
+/* =====================================================
+   SHOPNOVA – COMPONENTS / CART PAGE
+===================================================== */
+
+/* Cart Page Wrapper */
+.cart-page {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+
+/* ================= CART TABLE ================= */
+.cart-table-wrapper .table {
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.cart-table-wrapper th,
+.cart-table-wrapper td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--fs-sm);
+    vertical-align: middle;
+    color: var(--color-gray-700);
+}
+
+.cart-table-wrapper th {
+    background-color: var(--color-gray-100);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+}
+
+.cart-table-wrapper tbody tr {
+    transition: background var(--transition-normal);
+}
+
+.cart-table-wrapper tbody tr:hover {
+    background-color: var(--color-gray-50);
+}
+
+.cart-table-wrapper .product-img {
+    max-width: 60px;
+    border-radius: var(--radius-sm);
+}
+
+/* ================= EMPTY CART ================= */
+#emptyCart {
+    margin-top: var(--space-8);
+}
+
+#emptyCart h4 {
+    font-size: var(--fs-2xl);
+    color: var(--color-gray-800);
+    margin-bottom: var(--space-4);
+}
+
+#emptyCart .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--fs-base);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+#emptyCart .btn:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+/* ================= CART SUMMARY ================= */
+.cart-summary {
+    background-color: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-top: var(--space-6);
+}
+
+.cart-summary h5 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-4);
+    color: var(--color-gray-900);
+}
+
+.cart-summary .d-flex {
+    margin-bottom: var(--space-3);
+    font-size: var(--fs-base);
+    color: var(--color-gray-700);
+}
+
+.cart-summary .d-flex strong {
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-900);
+}
+
+.cart-summary hr {
+    border-color: var(--color-gray-200);
+    margin: var(--space-4) 0;
+}
+
+.cart-summary .btn {
+    width: 100%;
+    padding: var(--space-3);
+    font-size: var(--fs-base);
+    border-radius: var(--radius-md);
+    transition: var(--transition-normal);
+}
+
+.cart-summary .btn:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 767px) {
+    .cart-table-wrapper th,
+    .cart-table-wrapper td {
+        font-size: var(--fs-xs);
+        padding: var(--space-2);
+    }
+
+    .cart-summary {
+        padding: var(--space-4);
+    }
+
+    .cart-summary .btn {
+        font-size: var(--fs-sm);
+        padding: var(--space-2);
+    }
+}

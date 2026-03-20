@@ -1,0 +1,120 @@
+/* =====================================================
+   SHOPNOVA – AUTH (LOGIN / REGISTER)
+===================================================== */
+
+/* Page Wrapper */
+.auth-page {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+    display: flex;
+    justify-content: center;
+}
+
+/* Auth Card */
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--color-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Title */
+.auth-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-900);
+    text-align: center;
+    margin-bottom: var(--space-6);
+}
+
+/* Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+/* Form Group */
+.auth-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label */
+.auth-form-group label {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-2);
+}
+
+/* Input */
+.auth-form-group .form-control {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-gray-300);
+    font-size: var(--fs-base);
+    color: var(--color-gray-800);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.auth-form-group .form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+    outline: none;
+}
+
+/* Login Button */
+.auth-btn {
+    margin-top: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.auth-btn:hover,
+.auth-btn:focus {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Footer Text */
+.auth-footer {
+    margin-top: var(--space-4);
+    text-align: center;
+    font-size: var(--fs-sm);
+    color: var(--color-gray-600);
+}
+
+.auth-footer a {
+    color: var(--color-primary);
+    font-weight: var(--fw-medium);
+    transition: color var(--transition-fast);
+}
+
+.auth-footer a:hover,
+.auth-footer a:focus {
+    color: var(--color-primary-dark);
+    outline: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: var(--space-6);
+    }
+
+    .auth-title {
+        font-size: var(--fs-2xl);
+    }
+}

@@ -1,0 +1,56 @@
+/* =====================================================
+   SHOPNOVA – RESPONSIVE
+===================================================== */
+
+/* Breakpoints */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+/* Containers */
+.container-sm {
+  max-width: 540px;
+}
+
+.container-md {
+  max-width: 720px;
+}
+
+.container-lg {
+  max-width: 960px;
+}
+
+.container-xl {
+  max-width: 1140px;
+}
+
+.container-xxl {
+  max-width: 1320px;
+}
+
+/* Responsive Text */
+.text-sm {
+  font-size: var(--fs-sm);
+}
+
+.text-base {
+  font-size: var(--fs-base);
+}
+
+.text-md {
+  font-size: var(--fs-md);
+}
+
+.text-lg {
+  font-size: var(--fs-lg);
+}
+
+.text-xl {
+  font-size: var(--fs-xl);
+}

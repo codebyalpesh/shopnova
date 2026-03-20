@@ -1,0 +1,57 @@
+/* =====================================================
+   SHOPNOVA – WHY SHOP WITH US SECTION
+===================================================== */
+
+/* Wrapper */
+.why-shop-section {
+    padding: var(--space-16) 0;
+    background-color: var(--color-gray-50);
+    text-align: center;
+}
+
+/* Section Title */
+.why-shop-section .why-shop-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-8);
+}
+
+/* Feature Column */
+.why-shop-section .why-shop-feature {
+    margin-bottom: var(--space-6);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.why-shop-section .why-shop-feature:hover,
+.why-shop-section .why-shop-feature:focus-within {
+    transform: translateY(-3px);
+    outline: none;
+}
+
+/* Feature Icon */
+.why-shop-section .why-shop-feature i {
+    font-size: var(--fs-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+}
+
+/* Feature Title */
+.why-shop-section .why-shop-feature h5 {
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-lg);
+    color: var(--color-gray-800);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .why-shop-section .why-shop-feature i {
+        font-size: var(--fs-2xl);
+        margin-bottom: var(--space-2);
+    }
+    .why-shop-section .why-shop-feature h5 {
+        font-size: var(--fs-base);
+    }
+}

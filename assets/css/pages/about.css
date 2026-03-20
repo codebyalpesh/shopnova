@@ -1,0 +1,124 @@
+/* =====================================================
+   SHOPNOVA – ABOUT PAGE
+===================================================== */
+
+/* Page Wrapper */
+.about-page {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+
+/* ================= HERO ================= */
+.about-hero-section {
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+
+.about-hero-section .about-hero-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+}
+
+.about-hero-section .about-hero-text {
+    font-size: var(--fs-lg);
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ================= CONTENT ================= */
+.about-content-section {
+    margin-bottom: var(--space-16);
+}
+
+.about-content-section .about-image {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Text Content */
+.about-content-section .about-text h2,
+.about-content-section .about-text h3 {
+    font-family: var(--font-secondary);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-3);
+}
+
+.about-content-section .about-text h2 {
+    font-size: var(--fs-2xl);
+}
+
+.about-content-section .about-text h3 {
+    font-size: var(--fs-xl);
+    margin-top: var(--space-4);
+}
+
+.about-content-section .about-text p {
+    font-size: var(--fs-base);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-4);
+    line-height: 1.6;
+}
+
+/* ================= FEATURES ================= */
+.about-features-section {
+    text-align: center;
+}
+
+.about-features-section .about-features-title {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-10);
+    color: var(--color-gray-900);
+}
+
+/* Feature Card */
+.about-feature-card {
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    height: 100%;
+}
+
+.about-feature-card:hover,
+.about-feature-card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Feature Title */
+.about-feature-card h4 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-900);
+}
+
+/* Feature Text */
+.about-feature-card p {
+    font-size: var(--fs-base);
+    color: var(--color-gray-600);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .about-hero-section .about-hero-title {
+        font-size: var(--fs-3xl);
+    }
+
+    .about-hero-section .about-hero-text {
+        font-size: var(--fs-base);
+    }
+
+    .about-content-section .row {
+        flex-direction: column;
+        gap: var(--space-6);
+    }
+}
